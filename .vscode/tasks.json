@@ -1,9 +1,18 @@
+// {
+//     "version": "0.1.0",
+//     "command": "tsc",
+//     "isShellCommand": true,
+//     "args": ["-w", "-p", "."],
+//     "showOutput": "always",
+//     "isBackground": true,
+//     "problemMatcher": "$tsc-watch"
+// }
+
 {
     "version": "0.1.0",
-    "command": "tsc",
-    "isShellCommand": true,
-    "args": ["-w", "-p", "."],
-    "showOutput": "always",
-    "isBackground": true,
-    "problemMatcher": "$tsc-watch"
+    "command": "Chrome",
+    "osx": {
+        "command": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+    },
+    "args": ["${file}"]
 }
