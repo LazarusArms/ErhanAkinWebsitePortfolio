@@ -159,7 +159,7 @@ function init(){
     
     circleArray = [];
 
-    for (var i = 0; i < 2000; i++){
+    for (var i = 0; i < 5000; i++){
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * (innerHeight - radius * 2) + radius;
         var dx = (Math.random() - 0.5);
