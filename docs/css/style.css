@@ -8,8 +8,29 @@ body {
 /*canvas a.k.a. animatie op de achtergrond.*/
 canvas {
     border: 1px solid black;
-    background-color: #191919;
+    background-color: #000a17
 }
+
+.menu-top {
+    font-family: Futurist Fixed-width;
+    position: absolute;
+    top: 0;
+    /*transform: translateY(-50%);*/
+    color: #fff;
+    text-align: right;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    background: ;
+    /*height: auto;*/
+}
+
+.navlist li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
 
 /*tekst in het midden van de scherm*/
 .intro-container {
@@ -30,6 +51,19 @@ canvas {
     margin-top: 0;
 }
 
+.box {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    background: rgba(255, 0, 0, 0.5);
+    width: 20%;
+}
+
 .button-enter {
     font-family: Futurist Fixed-width;
     color: #fff;
@@ -38,6 +72,6 @@ canvas {
     cursor: pointer;
     padding: 0;
     border: none;
-    background: black;
-    
+    background: none;
+
 }
