@@ -23,16 +23,16 @@ var c = canvas.getContext('2d');
 
 
 //Lijnen tekenen
-c.beginPath();
-c.moveTo(50,  300);
-c.lineTo(300, 100);
-c.lineTo(600, 90);
-c.lineTo(900, 600);
-c.lineTo(50,  300);
-c.lineTo(1200, 200);
-c.lineTo(1200, 800);
-c.strokeStyle = "red"; 
-c.stroke();
+// c.beginPath();
+// c.moveTo(50,  300);
+// c.lineTo(300, 100);
+// c.lineTo(600, 90);
+// c.lineTo(900, 600);
+// c.lineTo(50,  300);
+// c.lineTo(1200, 200);
+// c.lineTo(1200, 800);
+// c.strokeStyle = "red"; 
+// c.stroke();
 
 //Arc en/of cirkel tekenen
 // c.beginPath();
@@ -63,7 +63,7 @@ var maxRadius = 40;
 //kleur waardes van de kleur array die ervoor zorgt welke kleur elke cirkeltje krijgt.
 var colorArray = [
     '#BD2320',
-    '#F8F6E8',
+    '#CDCDCD',
     '#244036',
     '#797072',
     '#7B3F1E',
@@ -73,8 +73,7 @@ var colorArray = [
 console.log();
 
 // event listener voor de mouse move, waarbij de coordinaten worden uitgeprint in de console.
-window.addEventListener('mousemove', 
-    function(event)  {
+window.addEventListener('mousemove', function(event){
     mouse.x = event.x;
     mouse.y = event.y;
     console.log(mouse);   
@@ -132,8 +131,8 @@ function Circle(x, y, dx, dy, radius) {
                         this.radius += 1;
                     }
                 
-                } else if (this.radius > this.minRadius) {
-                    this.radius -= 1;
+                }   else if (this.radius > this.minRadius) {
+                        this.radius -= 1;
                 }
             
                 this.draw();
